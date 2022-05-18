@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/a"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Orthographe"
+                android:fontFamily="@font/arbutus"
+                android:textColor="@color/colorBlanche"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/arbutus"
+                android:text="mə̀dʉ̂mbὰ"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/colorBlanche"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_btn_info"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_info" />
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Alphabet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Cliquer sur une lettre pour écouter sa prononciation" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_alphabet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:text="Les tons" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Cliquer sur un ton pour écouter sa prononciation" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_ton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--Ton Haut-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/card_ton_haut"
+                        card_view:cardBackgroundColor="@color/colorBlanche"
+                        card_view:cardCornerRadius="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/background_tons">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAllCaps="false"
+                                android:src="@drawable/tonhaut"
+                                android:textColor="@color/colorNoir"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--Ton Bas-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/card_ton_bas"
+                        android:layout_marginLeft="10dp"
+                        card_view:cardBackgroundColor="@color/colorBlanche"
+                        card_view:cardCornerRadius="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/background_tons">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAllCaps="false"
+                                android:src="@drawable/ton_bas"
+                                android:textColor="@color/colorNoir"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--Ton Moyen-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/card_ton_moyen"
+                        android:layout_marginLeft="10dp"
+                        card_view:cardBackgroundColor="@color/colorBlanche"
+                        card_view:cardCornerRadius="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/background_tons">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAllCaps="false"
+                                android:src="@drawable/tonmoyen"
+                                android:textColor="@color/colorNoir"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--Ton Montant-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/card_ton_montant"
+                        android:layout_marginLeft="10dp"
+                        card_view:cardBackgroundColor="@color/colorBlanche"
+                        card_view:cardCornerRadius="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/background_tons">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAllCaps="false"
+                                android:src="@drawable/tonmontant"
+                                android:textColor="@color/colorNoir"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--Ton Déscendant-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/card_ton_descendant"
+                        android:layout_marginLeft="10dp"
+                        card_view:cardBackgroundColor="@color/colorBlanche"
+                        card_view:cardCornerRadius="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:background="@drawable/background_tons">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAllCaps="false"
+                                android:src="@drawable/tondescendant"
+                                android:textColor="@color/colorNoir"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:text="Autres" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Saisir la référence d’un mot ou expression pour écouter sa lecture" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/edit_autre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/btn_lire"
+                        android:background="@drawable/design_edittext_noir"
+                        android:hint="Reference du mot"
+                        android:inputType="text"
+                        android:maxLength="12"
+                        android:maxLines="1"
+                        android:textColor="@color/colorNoir"
+                        />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:id="@+id/btn_lire"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/design_btn"
+                        android:text="Lire"/>
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorBlanche">
+
+    <TextView
+        android:id="@+id/textRotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="3dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="serif-monospace"
+        app:timeout="3000" />
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

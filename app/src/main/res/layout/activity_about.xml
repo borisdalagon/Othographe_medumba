@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/a"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Orthographe"
+                android:fontFamily="@font/arbutus"
+                android:textColor="@color/colorBlanche"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/arbutus"
+                android:text="mə̀dʉ̂mbὰ"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/colorBlanche"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_btn_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mə̀dʉ̂mbὰ"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorNoir"
+            android:justificationMode="inter_word"
+            android:text="Langue parlée et écrite du département du Ndé, à l’Ouest Cameroun." />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorNoir"
+            android:justificationMode="inter_word"
+            android:text="L’orthographe mə̀dʉ̂mbὰ est un livre utile pour:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorNoir"
+            android:justificationMode="inter_word"
+            android:text="-	Apprendre l’aphabet mə̀dʉ̂mbὰ;" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorNoir"
+            android:text="-	Apprendre à prononcer les différents son de cette langue;" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorNoir"
+            android:text="-	Apprendre les différents tons du mə̀dʉ̂mbὰ, indispensables pour une lecture;" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorNoir"
+            android:justificationMode="inter_word"
+            android:text="-	Apprendre quelques règles orthographiques et grammaticales;" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorNoir"
+            android:justificationMode="inter_word"
+            android:text="Pour faciliter la tâche aux apprenant, cette application a été mise sur pied pour lire de façon audible les mots et expressions en mə̀dʉ̂mbὰ présents dans le document. Chaque mot ou phrase lu est suivi d’une référence en exposant (par exemple: mɛn s34). Vous allez vous servir de cette référence pour demander à la l’application de vous lire le mot." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorNoir"
+            android:justificationMode="inter_word"
+            android:text="Pour toute autre préoccupation ou suggestion, vous avez ces contacts: theonjanja@yahoo.fr; +237 699195512 (Whatsapp)." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:text="Auteur : " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:textStyle="bold"
+                    android:text="NJANJA NEUTCHAP" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:textStyle="bold"
+                    android:text=" ( " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Njαmbǎ'nyà" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:textStyle="bold"
+                    android:text=" ) " />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlanche">
+
+        <TextView
+            android:id="@+id/textRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="3dp"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="serif-monospace"
+            app:timeout="3000" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

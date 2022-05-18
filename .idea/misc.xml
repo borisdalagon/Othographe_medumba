@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/bdalagon/Documents/Orthographe_menjumba/app/src/main/res/drawable/background_alphabet.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/bdalagon/Documents/Orthographe_menjumba/app/src/main/res/drawable/background_tons.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/bdalagon/Documents/Orthographe_menjumba/app/src/main/res/drawable/design_edittext_noir.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/bdalagon/Documents/Orthographe_menjumba/app/src/main/res/layout/activity_about.xml" value="0.25" />
+        <entry key="..\:/Users/bdalagon/Documents/Orthographe_menjumba/app/src/main/res/layout/activity_launcher.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/bdalagon/Documents/Orthographe_menjumba/app/src/main/res/layout/activity_main.xml" value="0.22333333333333336" />
+        <entry key="..\:/Users/bdalagon/Documents/Orthographe_menjumba/app/src/main/res/layout/item_alphabet.xml" value="0.3" />
+        <entry key="..\:/Users/bdalagon/Documents/Orthographe_menjumba/app/src/main/res/layout/item_ton.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
